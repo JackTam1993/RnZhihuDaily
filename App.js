@@ -1,8 +1,9 @@
 import React , { Component }from 'react';
 import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 import Swiper from 'react-native-swiper';
+import { StackNavigator } from 'react-navigation';
 
-export default class App extends React.Component {
+class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -10,6 +11,10 @@ export default class App extends React.Component {
             topStories:[]
         }
     }
+
+    // static navigationOptions = {
+    //     title: 'Welcome',
+    // };
 
     renderImg() {
         let imageViews=[];
@@ -63,15 +68,43 @@ export default class App extends React.Component {
               renderItem={({item}) =>
                   <View style={styles.itemView} key={item.id + 'view'}>
                       <Image source={{uri:item.images[0]}} style={{flex:1,width:30,height:80,padding:10}} key={item.id + 'img'}/>
-                      <Text style={styles.item} key={item.id + 'text'}>{item.title}</Text>
+                      <Text style={styles.item} key={item.id + 'text'} onPress={()=>
+                      {
+                          console.log('123');
+                          this.props.navigation.navigate('Detail',{id:1});
+                      }}>{item.title}</Text>
                   </View>}
               style={{flex:3}}
           />
       </View>
-
     );
   }
 }
+
+class Detail extends React.Component{
+    constructor(props){
+        super(props)
+    }
+
+    render() {
+        return (
+            <text>123</text>
+        )
+    }
+}
+
+const Navigate = StackNavigator({
+    Home:{screen:App},
+    Detail:{screen:Detail}
+},{
+    navigationOptions:{
+    headerBackTitle:null,
+        headerTintColor:'#333333',
+        showIcon:true,
+        swipeEnabled:false,
+        animationEnabled:false,
+}});
+
 
 const styles = StyleSheet.create({
     container:{
@@ -92,3 +125,15 @@ const styles = StyleSheet.create({
         height: 100,
     }
 });
+export default class registerApp extends React.Component {
+    constructor(props){
+        super(props)
+    }
+
+    render() {
+        return (
+            <Navigate/>
+        );
+    }
+};
+
