@@ -71,7 +71,7 @@ class App extends React.Component {
                       <Text style={styles.item} key={item.id + 'text'} onPress={()=>
                       {
                           console.log('123');
-                          this.props.navigation.navigate('Detail',{id:1});
+                          this.props.navigation.navigate('Detail');
                       }}>{item.title}</Text>
                   </View>}
               style={{flex:3}}
@@ -96,14 +96,7 @@ class Detail extends React.Component{
 const Navigate = StackNavigator({
     Home:{screen:App},
     Detail:{screen:Detail}
-},{
-    navigationOptions:{
-    headerBackTitle:null,
-        headerTintColor:'#333333',
-        showIcon:true,
-        swipeEnabled:false,
-        animationEnabled:false,
-}});
+    });
 
 
 const styles = StyleSheet.create({

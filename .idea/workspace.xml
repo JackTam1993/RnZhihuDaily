@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da2e3554-925d-4335-8e80-f3cfec30068b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App.js" afterPath="$PROJECT_DIR$/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,13 +19,13 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+            <state relative-caret-position="554">
+              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="n#!!block;n#renderImg#0;n#App#0" expanded="false" />
                 <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-                <element signature="e#3245#3568#0" expanded="false" />
+                <element signature="e#3069#3392#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -194,12 +192,12 @@
       <workItem from="1505512735328" duration="4022000" />
       <workItem from="1505622738424" duration="5409000" />
       <workItem from="1505794510887" duration="14148000" />
-      <workItem from="1505862654671" duration="4015000" />
+      <workItem from="1505862654671" duration="4878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27594000" />
+    <option name="totallyTimeSpent" value="28457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -245,7 +243,7 @@
             <element signature="e#0#41#0" expanded="true" />
             <element signature="n#!!block;n#renderImg#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="e#3245#3568#0" expanded="false" />
+            <element signature="e#3069#3392#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -282,7 +280,7 @@
             <element signature="e#0#41#0" expanded="true" />
             <element signature="n#!!block;n#renderImg#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="e#3245#3568#0" expanded="false" />
+            <element signature="e#3069#3392#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -326,7 +324,7 @@
             <element signature="e#0#41#0" expanded="true" />
             <element signature="n#!!block;n#renderImg#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="e#3245#3568#0" expanded="false" />
+            <element signature="e#3069#3392#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -471,13 +469,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        <state relative-caret-position="554">
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="n#!!block;n#renderImg#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="e#3245#3568#0" expanded="false" />
+            <element signature="e#3069#3392#0" expanded="false" />
           </folding>
         </state>
       </provider>
