@@ -19,13 +19,14 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="375">
+              <caret line="130" column="21" lean-forward="false" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="n#!!block;n#renderImg#0;n#App#0" expanded="false" />
-                <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-                <element signature="e#3069#3392#0" expanded="false" />
+                <element signature="n#!!block;n#constructor#0;n#Detail#0" expanded="false" />
+                <element signature="n#!!block;n#componentDidMount#0;n#Detail#0" expanded="false" />
+                <element signature="e#3874#4197#0" expanded="false" />
+                <marker date="1505882668000" expanded="true" signature="3518:3574" ph="..." />
               </folding>
             </state>
           </provider>
@@ -192,12 +193,12 @@
       <workItem from="1505512735328" duration="4022000" />
       <workItem from="1505622738424" duration="5409000" />
       <workItem from="1505794510887" duration="14148000" />
-      <workItem from="1505862654671" duration="4878000" />
+      <workItem from="1505862654671" duration="9668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28457000" />
+    <option name="totallyTimeSpent" value="33247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -241,9 +242,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="n#!!block;n#renderImg#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="e#3069#3392#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Detail#0" expanded="false" />
+            <element signature="n#!!block;n#componentDidMount#0;n#Detail#0" expanded="false" />
+            <element signature="e#3874#4197#0" expanded="false" />
+            <marker date="1505882668000" expanded="true" signature="3518:3574" ph="..." />
           </folding>
         </state>
       </provider>
@@ -278,9 +280,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="n#!!block;n#renderImg#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="e#3069#3392#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Detail#0" expanded="false" />
+            <element signature="n#!!block;n#componentDidMount#0;n#Detail#0" expanded="false" />
+            <element signature="e#3874#4197#0" expanded="false" />
+            <marker date="1505882668000" expanded="true" signature="3518:3574" ph="..." />
           </folding>
         </state>
       </provider>
@@ -322,9 +325,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="n#!!block;n#renderImg#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="e#3069#3392#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Detail#0" expanded="false" />
+            <element signature="n#!!block;n#componentDidMount#0;n#Detail#0" expanded="false" />
+            <element signature="e#3874#4197#0" expanded="false" />
+            <marker date="1505882668000" expanded="true" signature="3518:3574" ph="..." />
           </folding>
         </state>
       </provider>
@@ -469,13 +473,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="130" column="21" lean-forward="false" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="n#!!block;n#renderImg#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="e#3069#3392#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Detail#0" expanded="false" />
+            <element signature="n#!!block;n#componentDidMount#0;n#Detail#0" expanded="false" />
+            <element signature="e#3874#4197#0" expanded="false" />
+            <marker date="1505882668000" expanded="true" signature="3518:3574" ph="..." />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,5 @@
 import React , { Component }from 'react';
-import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Image, FlatList, WebView, TouchableHighlight } from 'react-native';
 import Swiper from 'react-native-swiper';
 import { StackNavigator } from 'react-navigation';
 
@@ -12,20 +12,19 @@ class App extends React.Component {
         }
     }
 
-    // static navigationOptions = {
-    //     title: 'Welcome',
-    // };
-
     renderImg() {
         let imageViews=[];
         let images = this.state.topStories;
-        // let images = ['https://yt3.ggpht.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAAAAAA/OixOH_h84Po/s900-c-k-no-mo-rj-c0xffffff/photo.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuQdH2uUFgiS3YAzAMb6zzY7zqw3lcJnq-ayF9QOQ0yv8bylZI5Q'];
         for(let i=0;i<images.length;i++){
             imageViews.push(
                 <Image
                     key={i}
                     style={{height: 200,flex:1}}
-                    source={{uri:images[i]}}
+                    source={{uri:images[i].image}}
+                    onPress={()=>
+                    {
+                        this.props.navigation.navigate('Detail',{id:image[i].id});
+                    }}
                 />
             );
         }
@@ -39,7 +38,10 @@ class App extends React.Component {
                 let jsonResultTop = JSON.parse(rst._bodyInit).top_stories;
                 let topImgList = [];
                 for(let i = 0;i<jsonResultTop.length;i++){
-                    topImgList.push(jsonResultTop[i].image);
+                    topImgList.push({
+                        image:jsonResultTop[i].image,
+                        id:jsonResultTop[i].id
+                    })
                 }
                 this.setState({
                     initData:jsonResult,
@@ -70,8 +72,7 @@ class App extends React.Component {
                       <Image source={{uri:item.images[0]}} style={{flex:1,width:30,height:80,padding:10}} key={item.id + 'img'}/>
                       <Text style={styles.item} key={item.id + 'text'} onPress={()=>
                       {
-                          console.log('123');
-                          this.props.navigation.navigate('Detail');
+                          this.props.navigation.navigate('Detail',{id:item.id});
                       }}>{item.title}</Text>
                   </View>}
               style={{flex:3}}
@@ -83,19 +84,53 @@ class App extends React.Component {
 
 class Detail extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
+        this.state = {
+            detailData:'',
+            css:''
+        }
     }
 
+    componentDidMount() {
+        let id = this.props.navigation.state.params.id;
+        return fetch('https://news-at.zhihu.com/api/4/news/' + id)
+            .then((rst)=>{
+                let css = JSON.parse(rst._bodyInit).css[0];
+                let jsonResult = JSON.parse(rst._bodyInit).body + `<link href=${css} rel='stylesheet' type='text/css' />` ;
+                this.setState({
+                    detailData:jsonResult,
+                    css:css
+                })
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+    }
+
+
     render() {
+
         return (
-            <text>123</text>
+            <WebView
+        source={{html:this.state.detailData}}
+        />
         )
     }
 }
 
 const Navigate = StackNavigator({
-    Home:{screen:App},
-    Detail:{screen:Detail}
+    Home:{
+        screen:App,
+        navigationOptions:{
+            title:'首页'
+        }
+    },
+    Detail:{
+        screen:Detail,
+        navigationOptions:{
+            title:'内容'
+        }
+    }
     });
 
 
